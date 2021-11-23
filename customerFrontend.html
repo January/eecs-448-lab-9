@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="formChecker.js"></script>
+</head>
+<body>
+    <form onsubmit="return check();" action="customerBackend.php" method="POST">
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname">
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" name="pw"><br><br>
+        <p> Item: Butyl Bike Tire Inner Tube (700x25c) ($5)</p>
+        <a class="tab">Quantity: </a><input type="number" id="quantity1" name="quantity1" min="0"><br>
+        <p> Item: Thin-Variety Bike Tire Inner Tube (700x25c) ($7)</p>
+        <a class="tab">Quantity: </a><input type="number" id="quantity2" name="quantity2" min="0"><br>
+        <p> Item: Latex-Variety Bike Tire Inner Tube (700x25c) ($10)</p>
+        <a class="tab">Quantity: </a><input type="number" id="quantity3" name="quantity3" min="0"><br>
+        <input type="radio" id="i1s1" name="s1" value="0">
+        <label for="i1s1">Free 7-day</label><br>
+        <input type="radio" id="i1s2" name="s1" value="5">
+        <label for="i1s2">3-day (+$5)</label><br>
+        <input type="radio" id="i1s3" name="s1" value="50">
+        <label for="i1s3">Overnight (+$50)</label><br><br>
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
